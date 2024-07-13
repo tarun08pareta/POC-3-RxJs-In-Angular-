@@ -1,0 +1,30 @@
+<!-- data-display.component.html -->
+<div *ngIf="combinedData">
+  <p>{{ combinedData }}</p>
+</div>
+
+<br>
+
+<div class="data-display-container">
+  <h2>Users</h2>
+  <ul class="user-list">
+    <li *ngFor="let user of users" (click)="onSelectUser(user.id)" class="user-list-item">
+      {{ user.name }}
+    </li>
+  </ul>
+
+  <div *ngIf="selectedUserPosts.length" class="posts-container">
+    <h3>Posts</h3>
+    <div *ngFor="let post of selectedUserPosts" (click)="onSelectPost(post.id)" class="post-item">
+      <h4>{{ post.title }}</h4>
+      <p>{{ post.body }}</p>
+
+      <div *ngIf="selectedPostComments[post.id]" class="comments-container">
+        <h5>Comments</h5>
+        <div *ngFor="let comment of selectedPostComments[post.id]" class="comment-item">
+          <p><strong>{{ comment.name }}</strong>: {{ comment.body }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

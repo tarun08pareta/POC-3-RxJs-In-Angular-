@@ -1,0 +1,26 @@
+.container{
+    margin-top: 23px;
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+}
+
+.div{
+    padding-left: 25px;
+    margin-top: 23px;
+    width: 240px;
+    height: 240px;
+    background-color: #4CAF50; /* Green background */
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.div2{
+    padding-left: 25px;
+    margin-top: 23px;
+    width: 240px;
+    height: 240px;
+    background-color: #4CAF50; /* Green background */
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px; /* Rounded corners */
+}

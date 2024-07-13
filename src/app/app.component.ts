@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Rxjs';
+
+  // message = 'Hello from AppComponent!';
+
+  // updateMessage(newMessage: string) {
+  //   this.message = newMessage;
+  // }
+  
 }

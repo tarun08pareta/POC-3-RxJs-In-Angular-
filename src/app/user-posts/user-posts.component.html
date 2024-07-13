@@ -1,0 +1,19 @@
+<!-- user-posts.component.html -->
+<h1>Higher-Order Observable: In this example, getUsers emits an array of users. When a user is selected, getPostsByUser emits an Observable of posts for that user.</h1>
+<div class="user-posts-container">
+  <button class="users-button" (click)="providedUser()">Users</button>
+  <p class="error-message">{{errorMessage}}</p>
+  <ul class="user-list">
+    <li *ngFor="let user of users" (click)="onSelectUser(user.id)" class="user-list-item">
+      {{ user.name }}
+    </li>
+  </ul>
+
+  <div *ngIf="selectedUserPosts.length" class="posts-container">
+    <h3>Posts</h3>
+    <div *ngFor="let post of selectedUserPosts" class="post-item">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.body }}</p>
+    </div>
+  </div>
+</div>

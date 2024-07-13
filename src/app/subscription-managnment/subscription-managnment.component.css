@@ -1,0 +1,90 @@
+.centered-heading {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.data-table-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.data-table th {
+  font-weight: bold;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+h3, p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+
+
+/*  user buttom */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-button:hover {
+  background-color: #218838;
+}
+
+.user-button:active {
+  background-color: #1e7e34;
+}
+
+.user-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
