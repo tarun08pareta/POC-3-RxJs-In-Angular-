@@ -112,4 +112,21 @@ export class DataServiceService {
   {
     return this.http.get<any>('https://ipapi.co/8.8.8.8/json/')
   }
+
+
+  // get concurrency managment
+  // getDogBread()
+  // {
+  //   return this.http.get<any>('https://dogapi.dog/api/v2/breeds')
+  // }
+
+
+  // get data for animationFrameSchedular
+
+  getAnimationSchedular()
+  {
+    return this.http.get<any>('https://potterapi-fedeperin.vercel.app/en/books')
+  }
+
+
 }

@@ -9,7 +9,7 @@ import { UserPostsComponent } from './user-posts/user-posts.component';
 import { DynamicObservableCompositionComponent } from './dynamic-observable-composition/dynamic-observable-composition.component';
 import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { OpratorComponent } from './oprator/oprator.component';
 import { OfFromComponent } from './oprator/of-from/of-from.component';
@@ -25,6 +25,12 @@ import { SubscriptionManagnmentComponent } from './subscription-managnment/subsc
 import { StateManagnmentComponent } from './state-managnment/state-managnment.component';
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './state/counter/counter.reducer';
+import { ConcurrencyManagementComponent } from './concurrency-management/concurrency-management.component';
+import { SchedulersComponent } from './schedulers/schedulers.component';
+import { ReactiveFormRxJsComponent } from './reactive-form-rx-js/reactive-form-rx-js.component';
+import { WebSocketRealTimeDataComponent } from './web-socket-real-time-data/web-socket-real-time-data.component';
+import { RateLimitingThrottlingComponent } from './rate-limiting-throttling/rate-limiting-throttling.component';
+import { BackPressureHandlingComponent } from './back-pressure-handling/back-pressure-handling.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +52,18 @@ import { counterReducer } from './state/counter/counter.reducer';
     FindCountMaxComponent,
     SubscriptionManagnmentComponent,
     StateManagnmentComponent,
+    ConcurrencyManagementComponent,
+    SchedulersComponent,
+    ReactiveFormRxJsComponent,
+    WebSocketRealTimeDataComponent,
+    RateLimitingThrottlingComponent,
+    BackPressureHandlingComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,HttpClientModule,FormsModule,RouterLink,RouterModule, StoreModule.forRoot({counter: counterReducer }, {})
+    , ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OpratorComponent } from './oprator/oprator.component';
 import { OfFromComponent } from './oprator/of-from/of-from.component';
@@ -15,6 +15,12 @@ import { DynamicObservableCompositionComponent } from './dynamic-observable-comp
 import { SubscriptionManagnmentComponent } from './subscription-managnment/subscription-managnment.component';
 import { StateManagnmentComponent } from './state-managnment/state-managnment.component';
 import { AppComponent } from './app.component';
+import { SchedulersComponent } from './schedulers/schedulers.component';
+import path from 'path';
+import { ConcurrencyManagementComponent } from './concurrency-management/concurrency-management.component';
+import { ReactiveFormRxJsComponent } from './reactive-form-rx-js/reactive-form-rx-js.component';
+import { RateLimitingThrottlingComponent } from './rate-limiting-throttling/rate-limiting-throttling.component';
+import { BackPressureHandlingComponent } from './back-pressure-handling/back-pressure-handling.component';
 
 const routes: Routes = [
   // {
@@ -79,6 +85,25 @@ const routes: Routes = [
   {
     path:'state-managnment',
     component:StateManagnmentComponent
+  },
+  {
+    path:'sechedulers',
+    component:SchedulersComponent
+  },
+  {
+    path:'concurrency-management',
+  component:ConcurrencyManagementComponent
+  },
+  {
+    path:'reactiveForm',
+    component:ReactiveFormRxJsComponent
+  },
+  {
+    path:'rateLimitingThrottling',
+    component:RateLimitingThrottlingComponent
+  },{
+    path:'back-pressure-handling',
+    component:BackPressureHandlingComponent
   }
 
 ];
